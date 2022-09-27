@@ -1,0 +1,207 @@
+:root {
+  --primary: rgb(58, 68, 77);
+  --accent: rgb(112, 195, 195);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header ul li a, .content ul li a {
+  padding: 0 10px;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+header ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+header ul li a {
+  color: var(--accent);
+  border-bottom: 5px solid var(--accent);
+}
+
+.title {
+  color: var(--primary);
+  background-color: var(--accent);
+  margin: 1rem 0;
+  padding: 0 10px 0 100px;
+}
+
+nav {
+  color: var(--accent);
+  background-color: var(--primary);
+  padding: 15px;
+}
+
+.hero {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-image: url("https://via.placeholder.com/400");
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero > h2 {
+  color: var(--primary);
+  background-color: var(--accent);
+  margin: 0 100px 10px 0;
+  padding: 10px;
+}
+
+.main {
+  max-width: 100%;
+  margin: 50px;
+}
+
+.main > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.main h2 {
+  border-right: 5px solid var(--primary);
+  margin: 0 10px;
+  padding: 10px;
+  text-align: right;
+  flex: 1 1 0;
+}
+
+.content {
+  padding: 5px 0 0 5px;
+  flex: 5 1 0;
+}
+
+.card {
+  display: flex;
+  display: inline-block;
+  position: relative;
+  border: 5px solid black;
+  height: 200px;
+  width: 45%;
+  margin-bottom: 10px;
+  background-color: var(--primary);
+}
+
+.card-subtitle {
+  position: absolute;
+  bottom: 10%;
+  background-color: var(--accent);
+  padding: 10px;
+  color: black;
+}
+
+.main-card {
+  height: 400px;
+  width: 100%;
+}
+
+.kent-card {
+  background: url("/assests/img/kenthome.png") no-repeat center center;
+  background-size: contain;
+  background-color: var(--primary);
+}
+
+.fw-card {
+  background: url("/assests/img/fwhome.png") no-repeat center center;
+  background-size: contain;
+  background-color: var(--primary);
+}
+
+.game-card {
+  background: url("/assests/img/game.png") no-repeat center center;
+  background-size: contain;
+  background-color: var(--primary);
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact ul li a {
+  color: black;
+  border-bottom: 5px solid var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .main > div {
+    flex-direction: column;
+  }
+
+  .main h2 {
+    border-right: 0;
+    border-bottom: 5px solid var(--primary);
+    text-align: left;
+  }
+
+  .content {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero h2 {
+    margin: 0 0 10px 0;
+  }
+
+  .main-card {
+    height: 200px;
+  }
+
+  .card, .main-card {
+    width: 100%;
+  }
+
+  .contact ul {
+    flex-direction: column;
+  }
+
+  .contact ul li {
+    margin-bottom: 20px;
+  }
+}
