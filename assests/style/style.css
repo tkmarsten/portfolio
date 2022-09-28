@@ -125,23 +125,23 @@ nav {
 }
 
 .kent-card {
-  background: url("/assests/img/kenthome.png") no-repeat center center;
+  background: url("../img/kenthome.png") no-repeat center center;
 }
 
 .fw-card {
-  background: url("/assests/img/fwhome.png") no-repeat center center;
+  background: url("../img/fwhome.png") no-repeat center center;
 }
 
 .game-card {
-  background: url("/assests/img/game.png") no-repeat center center;
+  background: url("../img/game.png") no-repeat center center;
 }
 
 .mp1-card {
-  background: url("/assests/img/mp1.png") no-repeat center center;
+  background: url("../img/mp1.png") no-repeat center center;
 }
 
 .mp2-card {
-  background: url("/assests/img/mp2.png") no-repeat center center;
+  background: url("../img/mp2.png") no-repeat center center;
 }
 
 .content > a > .card {
