@@ -4,7 +4,7 @@
 
 This challenge was to build a portfolio website to showcase projects and skills for potential employers. This website was built using the techniques and skills we have learned so far with HTML, CSS, flexbox, media queries for responsiveness, and variables.
 
-![Image of homepage](/assets/images/homepage.png)
+![Image of homepage](/assets/img/homepage.png)
 
 ## Installation
 
