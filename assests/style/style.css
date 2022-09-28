@@ -17,13 +17,13 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header ul li a, .content ul li a {
   padding: 0 10px;
   padding-bottom: 5px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 header {
@@ -106,6 +106,7 @@ nav {
   border: 5px solid black;
   height: 200px;
   width: 45%;
+  margin-right: 10px;
   margin-bottom: 10px;
   background-color: var(--primary);
 }
@@ -125,32 +126,27 @@ nav {
 
 .kent-card {
   background: url("/assests/img/kenthome.png") no-repeat center center;
-  background-size: contain;
-  background-color: var(--primary);
 }
 
 .fw-card {
   background: url("/assests/img/fwhome.png") no-repeat center center;
-  background-size: contain;
-  background-color: var(--primary);
 }
 
 .game-card {
   background: url("/assests/img/game.png") no-repeat center center;
-  background-size: contain;
-  background-color: var(--primary);
 }
 
 .mp1-card {
   background: url("/assests/img/mp1.png") no-repeat center center;
-  background-size: contain;
-  background-color: var(--primary);
 }
 
 .mp2-card {
   background: url("/assests/img/mp2.png") no-repeat center center;
+}
+
+.content > a > .card {
   background-size: contain;
-  background-color: var(--primary);
+  background-color: #2f2f2f;
 }
 
 .contact ul {
